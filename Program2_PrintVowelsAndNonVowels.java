@@ -13,45 +13,25 @@ public class Program2_PrintVowelsAndNonVowels {
     int iCount = 0;
     int oCount = 0;
     int uCount = 0;
-    int ACount = 0;
-    int ECount = 0;
-    int ICount = 0;
-    int OCount = 0;
-    int UCount = 0;
     int nonVowelCount = 0;
 
     for (int i = 0; i < input.length(); i++) {
       char c = input.charAt(i);
       switch (c) {
-        case 'a':
+        case 'a' , 'A':
           aCount++;
           break;
-        case 'e':
+        case 'e' , 'E':
           eCount++;
           break;
-        case 'i':
+        case 'i' , 'I':
           iCount++;
           break;
-        case 'o':
+        case 'o' , 'O':
           oCount++;
           break;
-        case 'u':
+        case 'u' , 'U':
           uCount++;
-          break;
-        case 'A':
-          ACount++;
-          break;
-        case 'E':
-          ECount++;
-          break;
-        case 'I':
-          ICount++;
-          break;
-        case 'O':
-          OCount++;
-          break;
-        case 'U':
-          UCount++;
           break;
         default:
           nonVowelCount++;
@@ -65,11 +45,6 @@ public class Program2_PrintVowelsAndNonVowels {
     System.out.println("i: " + iCount);
     System.out.println("o: " + oCount);
     System.out.println("u: " + uCount);
-    System.out.println("A: " + ACount);
-    System.out.println("E: " + ECount);
-    System.out.println("I: " + ICount);
-    System.out.println("O: " + OCount);
-    System.out.println("U: " + UCount);
     System.out.println("Non-vowels: " + nonVowelCount);
 
     scan.close();
